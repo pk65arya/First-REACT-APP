@@ -1,6 +1,8 @@
 //import ListGroup from "./components/ListGroup";
 
-import Alert from "./components/Alert";
+import Button from "./components/Button";
+
+//import Alert from "./components/Alert";
 
 function App() {
   // let items = ["Ney York", "San francisco", "Tokyo", "London", "Paris"];
@@ -17,9 +19,12 @@ function App() {
     //   />
     // </div>
     <div>
-      <Alert>
+      {/* <Alert>
         Hello <span>World</span>
-      </Alert>
+      </Alert> */}
+      <Button color="primary" onClick={() => console.log("clicked")}>
+        My Button
+      </Button>
     </div>
   );
 }
