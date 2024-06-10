@@ -2,8 +2,13 @@
 
 import { useState } from "react";
 
-function ListGroup() {
-  let items = ["Ney York", "San francisco", "Tokyo", "London", "Paris"];
+//{items[],heading:string}
+interface Props {
+  items: string[];
+  heading: string;
+}
+
+function ListGroup({ items, heading }: Props) {
   //  let selectedIndex = 0;
 
   //Event handler
@@ -16,7 +21,7 @@ function ListGroup() {
   //arr[1] //updater function
   return (
     <>
-      <h1>List</h1>
+      <h1>{heading}</h1>
       {items.length === 0 && <p>No item found</p>}
 
       <ul className="list-group">
